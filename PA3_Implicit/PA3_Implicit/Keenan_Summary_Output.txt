@@ -1,0 +1,63 @@
+Program Assignment: 3 
+Name: Ed Keenan
+
+Implicit Conversions
+
+Debug Mode
+
+    No - significant difference
+
+Release Mode
+
+    Run _NO_ implict conversions: 26.618784 ms
+    Run with implict conversions: 32.591380 ms
+
+
+
+Implicit prevention Errors:
+
+1>------ Build started: Project: PA3_Implicit, Configuration: Debug Win32 ------
+1>Build started 10/17/2013 1:00:59 AM.
+1>InitializeBuildStatus:
+1>  Touching "Debug\PA3_Implicit.unsuccessfulbuild".
+1>ClCompile:
+1>  Timer.cpp
+1>  stressTest.cpp
+1>stressTest.cpp(38): error C2248: 'Vect::setX' : cannot access private member declared in class 'Vect'
+1>          c:\code\pa3_implicit\PA3_A.h(104) : see declaration of 'Vect::setX'
+1>          c:\code\pa3_implicit\PA3_A.h(5) : see declaration of 'Vect'
+1>stressTest.cpp(39): error C2248: 'Vect::setY' : cannot access private member declared in class 'Vect'
+1>          c:\code\pa3_implicit\PA3_A.h(106) : see declaration of 'Vect::setY'
+1>          c:\code\pa3_implicit\PA3_A.h(5) : see declaration of 'Vect'
+1>stressTest.cpp(40): error C2248: 'Vect::setZ' : cannot access private member declared in class 'Vect'
+1>          c:\code\pa3_implicit\PA3_A.h(108) : see declaration of 'Vect::setZ'
+1>          c:\code\pa3_implicit\PA3_A.h(5) : see declaration of 'Vect'
+1>stressTest.cpp(42): error C2248: 'Vect::Vect' : cannot access private member declared in class 'Vect'
+1>          c:\code\pa3_implicit\PA3_A.h(101) : see declaration of 'Vect::Vect'
+1>          c:\code\pa3_implicit\PA3_A.h(5) : see declaration of 'Vect'
+1>stressTest.cpp(50): error C2248: 'Vect::setX' : cannot access private member declared in class 'Vect'
+1>          c:\code\PA3_A.h(104) : see declaration of 'Vect::setX'
+1>          c:\code\pa3_implicit\PA3_A.h(5) : see declaration of 'Vect'
+1>stressTest.cpp(52): error C2248: 'Vect::setZ' : cannot access private member declared in class 'Vect'
+1>          c:\code\PA3_A.h(108) : see declaration of 'Vect::setZ'
+1>          c:\code\pa3_implicit\PA3_A.h(5) : see declaration of 'Vect'
+1>stressTest.cpp(56): error C2248: 'Vect::set' : cannot access private member declared in class 'Vect'
+1>          c:\code\pa3_implicit\PA3_A.h(110) : see declaration of 'Vect::set'
+1>          c:\code\pa3_implicit\PA3_A.h(5) : see declaration of 'Vect'
+1>stressTest.cpp(61): error C2248: 'Vect::setZ' : cannot access private member declared in class 'Vect'
+1>          c:\code\pa3_implicit\PA3_A.h(108) : see declaration of 'Vect::setZ'
+1>          c:\code\pa3_implicit\PA3_A.h(5) : see declaration of 'Vect'
+1>stressTest.cpp(65): error C2248: 'Vect::setX' : cannot access private member declared in class 'Vect'
+1>          c:\code\pa3_implicit\PA3_A.h(104) : see declaration of 'Vect::setX'
+1>          c:\code\pa3_implicit\PA3_A.h(5) : see declaration of 'Vect'
+1>stressTest.cpp(68): error C2248: 'Vect::Vect' : cannot access private member declared in class 'Vect'
+1>          c:\code\pa3_implicit\PA3_A.h(101) : see declaration of 'Vect::Vect'
+1>          c:\code\pa3_implicit\PA3_A.h(5) : see declaration of 'Vect'
+1>  output.cpp
+1>  main.cpp
+1>  Generating Code...
+1>
+1>Build FAILED.
+1>
+1>Time Elapsed 00:00:01.41
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========
